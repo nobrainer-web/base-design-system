@@ -1,0 +1,35 @@
+@layer ds.block {
+/* logo-strip — row of client/partner logos. */
+
+.block-logo-strip {
+    text-align: center;
+
+    .logo-strip__title {
+        margin-bottom: var(--space-5);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+    }
+
+    .logo-strip__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-7);
+    }
+
+    .logo-strip__item img {
+        height: 2.5rem;
+        width: auto;
+        opacity: 0.7;
+        filter: grayscale(1);
+        transition: opacity 0.2s ease, filter 0.2s ease;
+    }
+
+    .logo-strip__item img:hover {
+        opacity: 1;
+        filter: none;
+    }
+}
+
+}

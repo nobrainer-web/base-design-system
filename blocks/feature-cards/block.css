@@ -1,0 +1,46 @@
+@layer ds.block {
+/* feature-cards — heading + grid of icon cards. */
+
+.block-feature-cards {
+    .feature-cards__head {
+        max-width: 48rem;
+        margin-bottom: var(--space-7);
+    }
+
+    .feature-cards__head .ds-lead {
+        margin-top: var(--space-3);
+    }
+
+    .feature-cards__grid {
+        display: grid;
+        grid-template-columns: repeat(var(--block-cols, 3), 1fr);
+        gap: var(--gap);
+    }
+
+    .feature-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .feature-card__title {
+        margin: var(--space-4) 0 var(--space-2);
+    }
+}
+
+@media (max-width: 60rem) {
+    .block-feature-cards .feature-cards__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 36rem) {
+    .block-feature-cards .feature-cards__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+}

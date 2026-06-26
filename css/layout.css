@@ -1,0 +1,77 @@
+@layer ds.foundation {
+/* Layout primitives: container, stack, the 12-column grid, small helpers.
+   Compose these in blocks. Breakpoints: md = 48rem, lg = 64rem. */
+
+    /* ── Container ──────────────────────────────────────────── */
+
+    .ds-container {
+        width: 100%;
+        max-width: var(--container);
+        margin-inline: auto;
+        padding-inline: var(--container-padding);
+    }
+
+    .ds-container--narrow { max-width: var(--container-narrow); }
+
+    /* ── Helpers ────────────────────────────────────────────── */
+
+    .ds-stack > * + * { margin-top: var(--space-4); }
+    .ds-center  { text-align: center; }
+    .ds-measure { max-width: 56ch; }
+
+    /* ── 12-column grid ─────────────────────────────────────────
+       .ds-grid inside a .ds-container; children span with .ds-col-{1..12}.
+       Mobile-first: full width by default; .ds-col-md-* from 48rem,
+       .ds-col-lg-* from 64rem. */
+
+    .ds-grid {
+        display: grid;
+        grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+        gap: var(--gap);
+    }
+
+    .ds-grid > * { grid-column: span 12; }
+
+    .ds-col-1  { grid-column: span 1; }
+    .ds-col-2  { grid-column: span 2; }
+    .ds-col-3  { grid-column: span 3; }
+    .ds-col-4  { grid-column: span 4; }
+    .ds-col-5  { grid-column: span 5; }
+    .ds-col-6  { grid-column: span 6; }
+    .ds-col-7  { grid-column: span 7; }
+    .ds-col-8  { grid-column: span 8; }
+    .ds-col-9  { grid-column: span 9; }
+    .ds-col-10 { grid-column: span 10; }
+    .ds-col-11 { grid-column: span 11; }
+    .ds-col-12 { grid-column: span 12; }
+
+    @media (min-width: 48rem) {
+        .ds-col-md-1  { grid-column: span 1; }
+        .ds-col-md-2  { grid-column: span 2; }
+        .ds-col-md-3  { grid-column: span 3; }
+        .ds-col-md-4  { grid-column: span 4; }
+        .ds-col-md-5  { grid-column: span 5; }
+        .ds-col-md-6  { grid-column: span 6; }
+        .ds-col-md-7  { grid-column: span 7; }
+        .ds-col-md-8  { grid-column: span 8; }
+        .ds-col-md-9  { grid-column: span 9; }
+        .ds-col-md-10 { grid-column: span 10; }
+        .ds-col-md-11 { grid-column: span 11; }
+        .ds-col-md-12 { grid-column: span 12; }
+    }
+
+    @media (min-width: 64rem) {
+        .ds-col-lg-1  { grid-column: span 1; }
+        .ds-col-lg-2  { grid-column: span 2; }
+        .ds-col-lg-3  { grid-column: span 3; }
+        .ds-col-lg-4  { grid-column: span 4; }
+        .ds-col-lg-5  { grid-column: span 5; }
+        .ds-col-lg-6  { grid-column: span 6; }
+        .ds-col-lg-7  { grid-column: span 7; }
+        .ds-col-lg-8  { grid-column: span 8; }
+        .ds-col-lg-9  { grid-column: span 9; }
+        .ds-col-lg-10 { grid-column: span 10; }
+        .ds-col-lg-11 { grid-column: span 11; }
+        .ds-col-lg-12 { grid-column: span 12; }
+    }
+}

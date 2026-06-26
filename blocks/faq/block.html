@@ -1,0 +1,19 @@
+<section class="block-faq" data-block="faq">
+    <div class="ds-container ds-container--narrow">
+        <div class="faq__head" data-if="showHead">
+            <span class="ds-kicker" data-slot="kicker:text" data-optional>FAQ</span>
+            <h2 data-slot="title:text" data-style="heading">Ofte stillede *spørgsmål*</h2>
+        </div>
+        <div class="faq__list">
+            <div class="faq__item" data-ds-accordion data-repeat="items" data-min="1" data-max="20">
+                <button class="faq__q" type="button" aria-expanded="false">
+                    <span data-slot="question:text">Et spørgsmål?</span>
+                    <i class="ds-ico faq__chevron" data-lucide="chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="faq__a" data-slot="answer:richtext">
+                    <p>Et svar på spørgsmålet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

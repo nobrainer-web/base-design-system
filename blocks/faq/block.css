@@ -1,0 +1,50 @@
+@layer ds.block {
+/* faq — accordion. Toggle state lives on .faq__q[aria-expanded] (base.js). */
+
+.block-faq {
+    .faq__head {
+        margin-bottom: var(--space-6);
+    }
+
+    .faq__item {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq__q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-4);
+        width: 100%;
+        padding: var(--space-5) 0;
+        background: none;
+        border: 0;
+        font: inherit;
+        font-weight: var(--font-weight-medium);
+        font-size: var(--text-h5);
+        color: var(--color-heading);
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .faq__chevron {
+        flex-shrink: 0;
+        transition: transform 0.2s ease;
+    }
+
+    .faq__q[aria-expanded="true"] .faq__chevron {
+        transform: rotate(180deg);
+    }
+
+    .faq__a {
+        display: none;
+        padding-bottom: var(--space-5);
+        color: var(--color-text-muted);
+    }
+
+    .faq__q[aria-expanded="true"] + .faq__a {
+        display: block;
+    }
+}
+
+}

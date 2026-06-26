@@ -1,0 +1,53 @@
+@layer ds.block {
+/* quote — testimonial cards. */
+
+.block-quote {
+    .quote__head {
+        margin-bottom: var(--space-7);
+        max-width: 48rem;
+    }
+
+    .quote__grid {
+        display: grid;
+        grid-template-columns: repeat(var(--block-cols, 3), 1fr);
+        gap: var(--gap);
+    }
+
+    .quote-card__mark {
+        width: 2rem;
+        height: 2rem;
+        color: var(--color-primary);
+        margin-bottom: var(--space-3);
+    }
+
+    .quote-card__text {
+        margin: 0 0 var(--space-5);
+        font-size: var(--text-lead);
+        line-height: 1.45;
+    }
+
+    .quote-card__author {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+    }
+
+    .quote-card__avatar {
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: var(--radius-pill);
+        object-fit: cover;
+    }
+
+    .quote-card__name {
+        display: block;
+        font-weight: var(--font-weight-medium);
+        font-size: var(--text-small);
+    }
+}
+
+@media (max-width: 60rem) {
+    .block-quote .quote__grid { grid-template-columns: 1fr; }
+}
+
+}

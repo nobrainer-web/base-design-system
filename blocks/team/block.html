@@ -1,0 +1,16 @@
+<section class="block-team" data-block="team">
+    <div class="ds-container">
+        <div class="team__head" data-if="showHead">
+            <span class="ds-kicker" data-slot="kicker:text" data-optional>Holdet</span>
+            <h2 data-slot="title:text" data-style="heading">Menneskene *bag*</h2>
+        </div>
+        <div class="team__grid">
+            <article class="member" data-repeat="members" data-min="1" data-max="12">
+                <img class="member__photo" data-slot="photo:media" data-optional src="https://picsum.photos/seed/base-team/640/640" alt="">
+                <h3 class="member__name" data-slot="name:text">Navn Navnesen</h3>
+                <p class="member__role" data-slot="role:text">Titel</p>
+                <p class="ds-muted ds-small member__bio" data-slot="bio:text" data-optional>En kort introduktion.</p>
+            </article>
+        </div>
+    </div>
+</section>

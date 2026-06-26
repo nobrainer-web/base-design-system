@@ -1,0 +1,51 @@
+@layer ds.block {
+/* steps — numbered process. The number comes from CSS counters. */
+
+.block-steps {
+    .steps__head {
+        margin-bottom: var(--space-7);
+        max-width: 48rem;
+    }
+
+    .steps__list {
+        list-style: none;
+        counter-reset: step;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(var(--block-cols, 3), 1fr);
+        gap: var(--gap-lg);
+    }
+
+    .step {
+        counter-increment: step;
+    }
+
+    .step__num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border-radius: var(--radius-pill);
+        background: var(--color-primary);
+        color: var(--color-on-primary);
+        font-family: var(--font-display);
+        font-weight: var(--font-weight-bold);
+        margin-bottom: var(--space-4);
+    }
+
+    .step__num::before {
+        content: counter(step);
+    }
+
+    .step__title {
+        margin-bottom: var(--space-2);
+    }
+}
+
+@media (max-width: 48rem) {
+    .block-steps .steps__list { grid-template-columns: 1fr; }
+}
+
+}

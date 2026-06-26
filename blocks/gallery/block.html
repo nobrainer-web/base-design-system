@@ -1,0 +1,14 @@
+<section class="block-gallery" data-block="gallery">
+    <div class="ds-container">
+        <div class="gallery__head" data-if="showHead">
+            <span class="ds-kicker" data-slot="kicker:text" data-optional>Galleri</span>
+            <h2 data-slot="title:text" data-style="heading">Udvalgte *billeder*</h2>
+        </div>
+        <div class="gallery__grid">
+            <figure class="gallery__item" data-repeat="images" data-min="2" data-max="24">
+                <img data-slot="media:media" src="https://picsum.photos/seed/base-g/600/600" alt="">
+                <figcaption class="ds-tiny" data-slot="caption:text" data-optional>Billedtekst</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>

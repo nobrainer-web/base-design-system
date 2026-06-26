@@ -1,0 +1,46 @@
+@layer ds.block {
+/* cta-banner — headline + buttons. Shines on brand/dark backgrounds. */
+
+.block-cta-banner {
+    .cta-banner__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-6);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cta-banner__content {
+        max-width: 40rem;
+    }
+
+    .cta-banner__content .ds-lead {
+        margin-top: var(--space-3);
+    }
+
+    .cta-banner__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+    }
+}
+
+/* Variant: centered */
+.block-cta-banner--centered {
+    text-align: center;
+
+    .cta-banner__inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cta-banner__content {
+        max-width: 48rem;
+    }
+
+    .cta-banner__actions {
+        justify-content: center;
+    }
+}
+
+}

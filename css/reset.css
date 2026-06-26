@@ -1,0 +1,59 @@
+@layer ds.foundation {
+/* Reset + document defaults. Minimal, modern, opinionated where it helps. */
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        /* Guard against horizontal scroll from off-canvas panels / wide media.
+           `clip` (not `hidden`) so it doesn't create a scroll container that would
+           break the sticky header. */
+        overflow-x: clip;
+    }
+
+    body {
+        margin: 0;
+        background: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-body);
+        font-size: var(--text-body);
+        line-height: var(--line-height-base);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+
+    img,
+    svg,
+    video {
+        max-width: 100%;
+        display: block;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+        color: inherit;
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.001ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}

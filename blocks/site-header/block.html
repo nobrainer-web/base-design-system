@@ -1,0 +1,20 @@
+<header class="block-site-header" data-block="site-header">
+    <div class="ds-container site-header__bar">
+        <a class="site-header__brand" href="/">
+            <img class="site-header__logo" data-slot="logo:media" data-optional src="" alt="">
+            <span class="site-header__name" data-slot="brandName:text">Nobrainer</span>
+        </a>
+
+        <nav class="site-header__nav" id="site-nav" aria-label="Primær">
+            <ul class="site-header__menu">
+                <li class="site-header__item" data-repeat="navLinks" data-min="0" data-max="7"><a class="site-header__link" data-slot="link:link" href="#">Link</a></li>
+            </ul>
+            <a class="ds-btn site-header__cta" data-repeat="buttons" data-min="0" data-max="2" data-slot="link:link" data-style="button" href="#">Kontakt</a>
+        </nav>
+
+        <button class="site-header__burger" type="button" aria-label="Åbn menu" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+            <i class="ds-ico ds-ico--ink" data-lucide="menu" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="site-header__backdrop" data-nav-close></div>
+</header>

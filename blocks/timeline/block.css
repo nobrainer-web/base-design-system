@@ -1,0 +1,49 @@
+@layer ds.block {
+/* timeline — vertical history with a left rule. */
+
+.block-timeline {
+    .timeline__head {
+        margin-bottom: var(--space-7);
+    }
+
+    .timeline__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline__item {
+        position: relative;
+        padding: 0 0 var(--space-7) var(--space-7);
+        border-left: 2px solid var(--color-border);
+    }
+
+    .timeline__item:last-child {
+        padding-bottom: 0;
+    }
+
+    .timeline__item::before {
+        content: "";
+        position: absolute;
+        left: -0.4375rem;
+        top: 0.3rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: var(--radius-pill);
+        background: var(--color-primary);
+    }
+
+    .timeline__year {
+        display: block;
+        font-family: var(--font-mono);
+        font-size: var(--text-small);
+        color: var(--color-primary);
+        margin-bottom: var(--space-1);
+    }
+
+    .timeline__title {
+        margin-bottom: var(--space-2);
+    }
+}
+
+}
