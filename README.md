@@ -1,6 +1,6 @@
 # base-design-system
 
-The Nobrainer Web **base design system**, packaged for **[Claude Design](https://claude.com/product/design)**.
+The Nobrainer **base design system**, packaged for **[Claude Design](https://claude.com/product/design)**.
 
 This repo is a clean, self-contained copy of the design language — plain CSS tokens,
 foundation elements, and a component library — so Claude Design can read it, build on-brand,
