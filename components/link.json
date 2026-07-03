@@ -1,0 +1,10 @@
+{
+  "title": "Link",
+  "description": "A plain text link — inline in copy or a quiet 'read more'. Not a button.",
+  "type": "object",
+  "properties": {
+    "label": { "type": "string" },
+    "href": { "type": "string" }
+  },
+  "required": ["label", "href"]
+}

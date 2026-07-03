@@ -1,0 +1,15 @@
+{
+  "title": "Media",
+  "description": "An image or a video. Images require alt text; videos require a poster and never autoplay with sound.",
+  "type": "object",
+  "properties": {
+    "type": { "type": "string", "enum": ["image", "video"], "default": "image" },
+    "src": { "type": "string" },
+    "alt": { "type": "string", "description": "Required when type is image." },
+    "poster": { "type": "string", "description": "Required when type is video." },
+    "autoplay": { "type": "boolean", "default": false, "description": "Video only. Autoplay forces muted + loop." },
+    "loop": { "type": "boolean", "default": false },
+    "lightbox": { "type": "boolean", "default": false, "description": "Images only." }
+  },
+  "required": ["type", "src"]
+}

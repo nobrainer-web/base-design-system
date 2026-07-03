@@ -1,0 +1,9 @@
+{
+  "title": "Text",
+  "description": "Body copy for a block. Plain prose; may contain simple inline formatting (bold, links).",
+  "type": "object",
+  "properties": {
+    "text": { "type": "string" }
+  },
+  "required": ["text"]
+}

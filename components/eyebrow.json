@@ -1,0 +1,9 @@
+{
+  "title": "Eyebrow",
+  "description": "Short kicker line above a heading. A few words, never a sentence.",
+  "type": "object",
+  "properties": {
+    "text": { "type": "string" }
+  },
+  "required": ["text"]
+}

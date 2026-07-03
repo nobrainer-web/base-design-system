@@ -1,0 +1,9 @@
+{
+  "title": "Icon",
+  "description": "A named icon from the project's single icon set. Decorative by default.",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "description": "Icon name, e.g. 'arrow-right', 'check', 'phone'." }
+  },
+  "required": ["name"]
+}

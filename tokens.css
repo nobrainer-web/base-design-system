@@ -1,8 +1,23 @@
 :root {
+  /* Colors */
   --color-primary: #2D6E5E;
   --color-secondary: #E0A526;
   --color-background: #FFFFFF;
+  --color-surface: #F5F4F0;
+  --color-border: #E5E2DB;
   --color-text: #1A1A1A;
+  --color-text-muted: #55524C;
+
+  /* Typography */
+  --font-heading: system-ui, sans-serif;
+  --font-body: system-ui, sans-serif;
+
+  /* Shape & rhythm */
+  --radius: 8px;
+  --space: 8px;                /* base unit — spacing is multiples of this */
+  --section-padding: 96px;     /* vertical padding of every block */
+
+  /* Grid */
   --grid-columns: 12;
   --grid-gutter: 24px;
   --grid-max-width: 1200px;

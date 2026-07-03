@@ -1,0 +1,10 @@
+{
+  "title": "Heading",
+  "description": "A section heading. Level is structure, size is CSS.",
+  "type": "object",
+  "properties": {
+    "text": { "type": "string" },
+    "level": { "type": "string", "enum": ["h1", "h2", "h3", "h4", "h5", "h6"] }
+  },
+  "required": ["text", "level"]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Button",
+  "description": "A call-to-action link styled as a button. Every button declares its style; icon is optional but always has a placement when present.",
+  "type": "object",
+  "properties": {
+    "label": { "type": "string" },
+    "href": { "type": "string" },
+    "style": { "type": "string", "enum": ["primary", "secondary", "outline"] },
+    "icon": { "type": "string", "description": "Icon name, e.g. 'arrow-right'. Optional." },
+    "iconPlacement": { "type": "string", "enum": ["start", "end"], "default": "end" }
+  },
+  "required": ["label", "href", "style"]
+}

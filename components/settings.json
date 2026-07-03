@@ -1,0 +1,9 @@
+{
+  "title": "Settings",
+  "description": "Shared presentation settings every block carries implicitly — never listed in block schemas. Settings restyle a block; they never change its data.",
+  "type": "object",
+  "properties": {
+    "background": { "type": "string", "enum": ["default", "surface"], "default": "default" },
+    "spacing": { "type": "string", "enum": ["normal", "compact"], "default": "normal" }
+  }
+}
