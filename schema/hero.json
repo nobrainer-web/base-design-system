@@ -23,7 +23,8 @@
       "type": "object",
       "properties": {
         "src": { "type": "string" },
-        "alt": { "type": "string" }
+        "alt": { "type": "string" },
+        "open-in-lightbox": { "type": "boolean" }
       }
     }
   }
