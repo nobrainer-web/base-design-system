@@ -1,0 +1,22 @@
+{
+  "title": "Cta",
+  "description": "Standalone call-to-action banner: heading, supporting text, and one button.",
+  "type": "object",
+  "properties": {
+    "heading": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "level": { "type": "string", "enum": ["h1", "h2", "h3", "h4", "h5", "h6"] }
+      }
+    },
+    "body": { "type": "string" },
+    "button": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "href": { "type": "string" }
+      }
+    }
+  }
+}
