@@ -1,0 +1,21 @@
+{
+  "title": "MediaHeading",
+  "description": "Image on the left, heading on the right.",
+  "type": "object",
+  "properties": {
+    "image": {
+      "type": "object",
+      "properties": {
+        "src": { "type": "string" },
+        "alt": { "type": "string" }
+      }
+    },
+    "heading": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "level": { "type": "string", "enum": ["h1", "h2", "h3", "h4", "h5", "h6"] }
+      }
+    }
+  }
+}

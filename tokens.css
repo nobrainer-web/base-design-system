@@ -1,0 +1,9 @@
+:root {
+  --color-primary: #2D6E5E;
+  --color-secondary: #E0A526;
+  --color-background: #FFFFFF;
+  --color-text: #1A1A1A;
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --grid-max-width: 1200px;
+}
