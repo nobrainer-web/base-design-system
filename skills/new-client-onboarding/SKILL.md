@@ -37,26 +37,21 @@ For each schema, read its JSON to get the exact field contract. **Only these fie
 
 ## Step 3 — Collect content per block
 
-Ask the user which blocks they want to build, then gather exactly the content each schema requires. For **Media heading**:
-
-- `image.src` — which image (upload / asset path)
-- `image.alt` — alt text
-- `heading.text` — the heading copy
-- `heading.level` — one of `h1`–`h6`
-
-For **Hero**:
-
-- `eyebrow` — short label above the heading (optional)
-- `heading.text` / `heading.level` — the heading copy and level
-- `body` — supporting paragraph
-- `cta.label` / `cta.href` — the call-to-action copy and link
-- `image.src` / `image.alt` — optional image (background or side visual)
-
-Repeat for every block they want. Keep the questions tight and mapped 1:1 to schema fields.
+Ask the user which blocks they want to build. For each one, re-read its schema file right then (don't rely on what you listed in Step 2 from memory) and flatten it into a field list — e.g. `image.src`, `image.alt`, `heading.text`, `heading.level`. Ask for exactly those fields, 1:1, nothing more and nothing less.
 
 ## Step 4 — Build
 
 Build each requested block as an HTML artifact in the project, styled with the client tokens from Step 1. You may restyle, animate, and art-direct freely — creativity is in *how it looks*, never in *what data it carries* (see `DESIGN.md`).
+
+Record what you built in the project's `blocks.json` (create it if missing), mapping each block to the flat field list it implements:
+
+```json
+{
+  "media-heading": ["image.src", "image.alt", "heading.text", "heading.level"]
+}
+```
+
+This is the record the `update-client-schemas` skill diffs against later — keep it accurate to what the block actually implements, not what the schema happened to contain at build time.
 
 Show the result to the user and iterate.
 
