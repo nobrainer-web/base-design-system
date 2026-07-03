@@ -2,8 +2,8 @@
 
 ## Rules
 
-- Every component's data fields are fixed by its file in `schema/`. Restyle, animate, and art-direct freely — but never add, rename, or remove a field, even for a "flashier" variant.
-- If a request seems to need more data than the schema provides (a new eyebrow line, a variant switch, an index number), don't invent the field. Say so, and propose the schema change instead of shipping it silently.
+- Every component's data fields are fixed by its file in `schema/`. Restyle, animate, and art-direct freely — but never add, rename, or remove a field on an existing schema, even for a "flashier" variant.
+- If a request needs data no existing schema provides (a new eyebrow line, a variant switch, an index number), don't invent the field. Propose a new component with its own schema instead of altering an existing one.
 - "Creative" means how a component looks. It never means what data it carries.
 
 ## Tokens
@@ -23,13 +23,7 @@ Replace these four with a real palette any time — everything else in this repo
 
 ## Components
 
-### Media heading
-Image on the left, heading on the right. Nothing else.
-
-- **Image** — any aspect ratio, fills its half
-- **Heading** — any level h1–h6, sits in the right half, vertically centered with the image
-
-See `schema/media-heading.json` for the exact field contract.
+See `schema` fodler for the exact field contract for each component.
 
 ## Voice
 (placeholder — a couple of lines once you have real notes)

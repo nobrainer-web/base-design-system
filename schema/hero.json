@@ -1,0 +1,30 @@
+{
+  "title": "Hero",
+  "description": "Full-width intro section with heading, supporting text, and a call to action.",
+  "type": "object",
+  "properties": {
+    "eyebrow": { "type": "string" },
+    "heading": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "level": { "type": "string", "enum": ["h1", "h2", "h3", "h4", "h5", "h6"] }
+      }
+    },
+    "body": { "type": "string" },
+    "cta": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "href": { "type": "string" }
+      }
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "src": { "type": "string" },
+        "alt": { "type": "string" }
+      }
+    }
+  }
+}
